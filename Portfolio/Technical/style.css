@@ -1,0 +1,111 @@
+/* Basic Styling */
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout */
+div.main-body {
+    display: grid;
+    grid-template-columns: minmax(300px, auto) 1fr;
+    grid-template-areas: "navbar mainContent";
+    grid-gap: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "navbar"
+            "mainContent";
+    }
+
+    nav#navbar {
+        position: static;
+        width: 100%;
+    }
+
+    main#main-doc {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Navbar Styling */
+nav#navbar {
+    grid-area: navbar;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    overflow: auto;
+    color: olivedrab;
+}
+
+nav#navbar a {
+    display: block;
+    border: 1px solid black;
+    border-radius:10px;
+    padding: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    text-align: center;
+    color: olivedrab;
+}
+
+/* Main Content Styling */
+main#main-doc {
+    grid-area: mainContent;
+    padding: 20px;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Tips and Did You Know Sections Styling */
+.section-highlight {
+    background-color: lightgray; 
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the sections */
+    margin-bottom: 20px; /* Spacing between sections */
+}
+
+.section-highlight h3, 
+.section-highlight h4 {
+    color: black;
+}
+
+/* Improved list styling */
+ul {
+    padding-left: 20px; /* Adjusted indentation for list */
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .section-highlight {
+        margin: 10px; /* Smaller margin on smaller screens */
+    }
+}
+
+/* Closing Remarks Styling */
+.closing-remarks {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.footer {
+    background-color: var(--accent-color); /* Using the accent color defined earlier */
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px; /* Space above the footer */
+}

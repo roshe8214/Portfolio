@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breezy Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/Logo T.png" alt="Breezy Music Entertainment">
+        </a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Music</a>
+            <a href="#">Artists</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Albums -->
+        <div class="album-container">
+            <div class="album">
+                <img src="images/Album Covers/Beastie Boys.png" alt="Beastie Boys" data-music="music/No Sleep Till Brooklyn.mp3"> 
+            </div>
+            <div class="album">
+                <img src="images/Album Covers/Aventura.png" alt="Aventura" data-music="music/Veneno.mp3"> 
+            </div>
+            <div class="album">
+                <img src="images/Album Covers/Bad Bunny.png" alt="Bad Bunny" data-music="music/Titi Me Pregunto.mp3"> 
+            </div>
+        </div>
+
+        <!-- Music Player -->
+        <div class="player-container">
+            <audio id="music-player">
+                <source id="music-source" src="music/No Sleep Till Brooklyn.mp3" type="audio/mp3"> 
+            </audio>
+            <div class="buttons-container">
+                <button class="button" id="play">
+                    <img src="images/Music Player Buttons/Play Button.png" alt="Play"> 
+                </button>
+                <button class="button" id="pause">
+                    <img src="images/Music Player Buttons/Pause Button.png" alt="Pause"> 
+                </button>
+                <button class="button" id="stop">
+                    <img src="images/Music Player Buttons/Stop Button.png" alt="Stop"> 
+                </button>
+                <button class="button" id="skip-back">
+                    <img src="images/Music Player Buttons/Skip Reverse.png" alt="Skip Back"> 
+                </button>
+                <button class="button" id="skip-forward">
+                    <img src="images/Music Player Buttons/Skip Forward.png" alt="Skip Forward"> 
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 Breezy Music Entertainment</footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
